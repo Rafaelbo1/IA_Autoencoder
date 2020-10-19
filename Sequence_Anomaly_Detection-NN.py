@@ -1,4 +1,5 @@
 import random
+from Read import dadosBasicos
 import pandas as pd
 import numpy as np
 from keras.preprocessing.sequence import pad_sequences
@@ -6,6 +7,8 @@ from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pylab import rcParams
+
+path = "json_filtrados\justica_eleitoral.json"
 
 rcParams['figure.figsize'] = 12, 6
 sns.set(style='whitegrid', palette='muted', font_scale=1.5)
